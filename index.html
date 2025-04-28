@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="card-header">
+            <!-- <h5>To-Do List</h5> -->
+             <img src="img/ToDo.png" alt="" class="card-title">
+        </div>
+
+        <div class="card-body">
+            <div class="card-filter">
+                <input class="todoinput" id="todoSearch" type="text" placeholder="Listeden Ara">
+                <hr>
+            </div>
+      
+        <hr>
+            <div class="card-body-main">
+                <form id="todoAddForm">
+                    <input type="text" class="todoinput" id="todoName" placeholder="Yapılacak Listesine Ekleyiniz">
+                    <button id="todoAddButton" type="submit" class="btn btn-primary">Ekle</button>
+                </form>
+                
+                <h2>Yapılacaklar</h2>
+                <ul class="list-group">
+                    <!-- <li>
+                        <a href="#" class="delete-item">
+                            <i class="fa fa-remove"></i>
+                        </a>
+                    </li> -->
+                </ul>
+
+                <button id="clearButton" class="btn btn-primary">Tüm Listeyi Temizle</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
