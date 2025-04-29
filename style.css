@@ -5,11 +5,28 @@ body{
     background-attachment: fixed; /* Sayfa kaydırıldığında arka planın sabit kalmasını sağlar */
 }
 
-.card-body {
+/* .card-body {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    /*
+    justify-content: center;
+    align-items: center;
+    
+} */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-body {
+    width: 100%;
+    max-width: 1000px; /* veya ihtiyacına göre 500px/700px */
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .card-header {
     display: flex;
@@ -23,9 +40,6 @@ body{
     flex-direction: column;
 }
 
-.card-filter .todoinput {
-    width: 100%;
-}
 
 /* Form kısmı genişlik varsa iki sütun olacak */
 #todoAddForm {
@@ -101,6 +115,7 @@ h2{
 
 .list-group li i::before {
     content: "🗑️"; /* Basit çöp kutusu ikonu */
+    float: right; /*ikonu sağda tutmak için */
 }
 .custom-alert {
     position: fixed;
